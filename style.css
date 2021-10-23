@@ -1,12 +1,12 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 html,
 body {
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
-
   height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,12 +17,14 @@ body {
   place-items: center;
 }
 main {
-  background: url(images/Mobile.jpg);
-  width: 375px;
-  height: 812px;
+  background: url(images/Desktop.jpg) no-repeat center/cover;
+  width: 100%;
+  min-height: 600px;
+  height: 100vh;
 }
 .container {
   max-width: 250px;
+  margin-top: -5%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -69,4 +71,12 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+@media(max-width: 960px){
+  main {
+    background: url(images/Mobile1.jpg) no-repeat center/cover;
+    width: 100vw;
+    min-height:700px;
+    height: 100vh;
+  }
 }
