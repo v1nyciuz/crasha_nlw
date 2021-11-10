@@ -2,7 +2,7 @@ const linksSocialMedia = {
   github: "v1nyciuz",
   facebook: "v1nyciuz",
   instagram: "v1nyciuz",
-  twitter: "v1nyciuz"
+  linkedin: "in/vinicius-adrianor"
 }
       
 function changeSocialMediaLinks(){
